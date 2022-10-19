@@ -58,7 +58,7 @@ public class ApplicationDbContext : DbContext
 
 
 ## REST API에 대한 응답을 처리할 Controller 생성
-```
+``` c#
 [Route("api/[controller]")]
 [ApiController]
 public class RankingController : ControllerBase
