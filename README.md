@@ -14,19 +14,19 @@ REST API를 활용해 게임 결과 순위에 대한 CRUD를 수행하는 웹기
 :heavy_check_mark: REST API에 대한 응답을 처리할 Controller 생성
 
 
-:heavy_check_mark: 게임 결과 생성하기 (Create)
+:heavy_check_mark: 게임 결과 생성하기(Create)
 
 
-:heavy_check_mark: 모든 게임 결과 불러오기 (Read)
+:heavy_check_mark: 모든 게임 결과 불러오기(Read)
 
 
-:heavy_check_mark:  게임 결과 불러오기 (Read)
+:heavy_check_mark:  게임 결과 불러오기(Read)
 
 
-:heavy_check_mark: 게임 결과 수정하기 (Update)
+:heavy_check_mark: 게임 결과 수정하기(Update)
 
 
-:heavy_check_mark: 게임 결과 삭제하기 (Delete)
+:heavy_check_mark: 게임 결과 삭제하기(Delete)
 
 
 ## 엔티티용 클래스 GameResult 생성
@@ -76,7 +76,7 @@ public class RankingController : ControllerBase
 ```
 
 
-## [Create] 게임 결과 생성하기
+## 게임 결과 생성하기(Create)
 ``` c#
 // Create
 // 아이템 생성 요청 (Body에 실제 정보)
@@ -92,7 +92,7 @@ public GameResult AddGameResult([FromBody] GameResult gameResult)
 ```
 
 
-## [Read] 모든 게임 결과 불러오기
+## 모든 게임 결과 불러오기(Read)
 ``` c#
 // Read
 // 모든 아이템
@@ -109,7 +109,7 @@ public List<GameResult> GetGameResults()
 ```
 
 
-## [Read] 특정 게임 결과 불러오기
+## [Read] 특정 게임 결과 불러오기(Read)
 ``` c#
 // Read
 // id=1번인 아이템
@@ -126,7 +126,7 @@ public GameResult GetGameResult(int id)
 ```
 
 
-## [Update] 게임 결과 수정하기
+## [Update] 게임 결과 수정하기(Update)
 ``` c#
 // Update
 // 아이템 갱신 요청 (Body에 실제 정보)
@@ -150,7 +150,7 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 ```
 
 
-## [Delete] 게임 결과 삭제하기
+## [Delete] 게임 결과 삭제하기(Delete)
 ``` c#
 // Delete
 // id=1번인 아이템 삭제
