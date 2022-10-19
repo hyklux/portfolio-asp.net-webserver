@@ -19,6 +19,8 @@ REST API를 활용해 게임 결과에 대한 CRUD를 수행하는 웹기반 API
 
 :heavy_check_mark: [Delete] 게임 결과 삭제하기
 
+
+
 ## 엔티티용 클래스 GameResult 생성
 ``` c#
 namespace SharedData.Models
