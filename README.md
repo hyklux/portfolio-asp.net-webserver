@@ -8,6 +8,9 @@ REST API를 활용해 게임 결과에 대한 CRUD를 수행하는 웹기반 API
 :heavy_check_mark: 엔티티용 클래스 GameResult 생성
 
 
+:heavy_check_mark: ApplicationDbContext 생성 및 GameResults DbSet 선언
+
+
 :heavy_check_mark: [Create] 게임 결과 생성하기
 
 
@@ -18,7 +21,6 @@ REST API를 활용해 게임 결과에 대한 CRUD를 수행하는 웹기반 API
 
 
 :heavy_check_mark: [Delete] 게임 결과 삭제하기
-
 
 
 ## 엔티티용 클래스 GameResult 생성
@@ -32,6 +34,21 @@ namespace SharedData.Models
 		public string UserName { get; set; }
 		public int Score { get; set; }
 		public DateTime Date { get; set; }
+	}
+}
+```
+
+
+## ApplicationDbContext 생성 및 GameResults DbSet 선언
+```
+public class ApplicationDbContext : DbContext
+{
+	public DbSet<GameResult> GameResults { get; set; }
+
+	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+		: base(options)
+	{
+
 	}
 }
 ```
