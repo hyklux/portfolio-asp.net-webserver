@@ -71,3 +71,100 @@ public class RankingController : ControllerBase
 	}
 }
 ```
+
+
+## [Create] 게임 결과 생성하기
+```
+// Create
+// 아이템 생성 요청 (Body에 실제 정보)
+// POST /api/ranking
+[HttpPost]
+public GameResult AddGameResult([FromBody] GameResult gameResult)
+{
+	_context.GameResults.Add(gameResult);
+	_context.SaveChanges();
+
+	return gameResult;
+}
+```
+
+
+## [Read] 모든 게임 결과 불러오기
+```
+// Read
+// 모든 아이템
+// GET /api/ranking
+[HttpGet]
+public List<GameResult> GetGameResults()
+{
+	List<GameResult> results = _context.GameResults
+		.OrderByDescending(item => item.Score)
+		.ToList();
+
+	return results;
+}
+```
+
+
+## [Read] 특정 유저 게임 결과 불러오기
+```
+// Read
+// id=1번인 아이템
+// GET /api/ranking/1
+[HttpGet("{id}")]
+public GameResult GetGameResult(int id)
+{
+	GameResult result = _context.GameResults
+				.Where(item => item.Id == id)
+				.FirstOrDefault();
+
+	return result;
+}
+```
+
+
+## [Update] 게임 결과 수정하기
+```
+// Update
+// 아이템 갱신 요청 (Body에 실제 정보)
+// PUT /api/ranking (PUT 보안 문제로 웹에선 활용 X)
+[HttpPut]
+public bool UpdateGameResult([FromBody] GameResult gameResult)
+{
+	var findResult = _context.GameResults
+		.Where(x => x.Id == gameResult.Id)
+		.FirstOrDefault();
+
+	if (findResult == null)
+		return false;
+
+	findResult.UserName = gameResult.UserName;
+	findResult.Score = gameResult.Score;
+	_context.SaveChanges();
+
+	return true;
+}
+```
+
+
+## [Delete] 게임 결과 삭제하기
+```
+// Delete
+// id=1번인 아이템 삭제
+// DELETE /api/ranking/1 (DELETE 보안 문제로 웹에서 활용 X)
+[HttpDelete("{id}")]
+public bool DeleteGameResult(int id)
+{
+	var findResult = _context.GameResults
+				.Where(x => x.Id == id)
+				.FirstOrDefault();
+
+	if (findResult == null)
+		return false;
+
+	_context.GameResults.Remove(findResult);
+	_context.SaveChanges();
+
+	return true;
+}
+```
