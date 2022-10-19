@@ -40,7 +40,7 @@ namespace SharedData.Models
 
 
 ## ApplicationDbContext 생성 및 GameResults DbSet 선언
-```
+``` c#
 public class ApplicationDbContext : DbContext
 {
 	public DbSet<GameResult> GameResults { get; set; }
