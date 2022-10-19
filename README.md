@@ -14,16 +14,19 @@ REST API를 활용해 게임 결과 순위에 대한 CRUD를 수행하는 웹기
 :heavy_check_mark: REST API에 대한 응답을 처리할 Controller 생성
 
 
-:heavy_check_mark: [Create] 게임 결과 생성하기
+:heavy_check_mark: 게임 결과 생성하기 (Create)
 
 
-:heavy_check_mark: [Read] 게임 결과 불러오기
+:heavy_check_mark: 모든 게임 결과 불러오기 (Read)
 
 
-:heavy_check_mark: [Update] 게임 결과 수정하기
+:heavy_check_mark:  게임 결과 불러오기 (Read)
 
 
-:heavy_check_mark: [Delete] 게임 결과 삭제하기
+:heavy_check_mark: 게임 결과 수정하기 (Update)
+
+
+:heavy_check_mark: 게임 결과 삭제하기 (Delete)
 
 
 ## 엔티티용 클래스 GameResult 생성
@@ -106,7 +109,7 @@ public List<GameResult> GetGameResults()
 ```
 
 
-## [Read] 특정 유저 게임 결과 불러오기
+## [Read] 특정 게임 결과 불러오기
 ``` c#
 // Read
 // id=1번인 아이템
