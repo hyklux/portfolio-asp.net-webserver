@@ -109,7 +109,7 @@ public List<GameResult> GetGameResults()
 ```
 
 
-## [Read] 특정 게임 결과 불러오기(Read)
+## 특정 게임 결과 불러오기(Read)
 ``` c#
 // Read
 // id=1번인 아이템
@@ -126,7 +126,7 @@ public GameResult GetGameResult(int id)
 ```
 
 
-## [Update] 게임 결과 수정하기(Update)
+## 게임 결과 수정하기(Update)
 ``` c#
 // Update
 // 아이템 갱신 요청 (Body에 실제 정보)
@@ -150,7 +150,7 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 ```
 
 
-## [Delete] 게임 결과 삭제하기(Delete)
+## 게임 결과 삭제하기(Delete)
 ``` c#
 // Delete
 // id=1번인 아이템 삭제
