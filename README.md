@@ -74,7 +74,7 @@ public class RankingController : ControllerBase
 
 
 ## [Create] 게임 결과 생성하기
-```
+``` c#
 // Create
 // 아이템 생성 요청 (Body에 실제 정보)
 // POST /api/ranking
@@ -90,7 +90,7 @@ public GameResult AddGameResult([FromBody] GameResult gameResult)
 
 
 ## [Read] 모든 게임 결과 불러오기
-```
+``` c#
 // Read
 // 모든 아이템
 // GET /api/ranking
@@ -107,7 +107,7 @@ public List<GameResult> GetGameResults()
 
 
 ## [Read] 특정 유저 게임 결과 불러오기
-```
+``` c#
 // Read
 // id=1번인 아이템
 // GET /api/ranking/1
@@ -124,7 +124,7 @@ public GameResult GetGameResult(int id)
 
 
 ## [Update] 게임 결과 수정하기
-```
+``` c#
 // Update
 // 아이템 갱신 요청 (Body에 실제 정보)
 // PUT /api/ranking (PUT 보안 문제로 웹에선 활용 X)
@@ -148,7 +148,7 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 
 
 ## [Delete] 게임 결과 삭제하기
-```
+``` c#
 // Delete
 // id=1번인 아이템 삭제
 // DELETE /api/ranking/1 (DELETE 보안 문제로 웹에서 활용 X)
