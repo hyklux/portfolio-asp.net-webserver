@@ -44,7 +44,7 @@ namespace SharedData.Models
 }
 ```
 
-
+(DB 사진 추가)
 ## ApplicationDbContext 생성 및 GameResults DbSet 선언
 ``` c#
 public class ApplicationDbContext : DbContext
@@ -75,7 +75,7 @@ public class RankingController : ControllerBase
 }
 ```
 
-
+(생성 사진 추가 - postman, db)
 ## 게임 결과 생성하기(Create)
 ``` c#
 // Create
@@ -91,7 +91,7 @@ public GameResult AddGameResult([FromBody] GameResult gameResult)
 }
 ```
 
-
+(조회 사진 추가 - postman, webpage)
 ## 모든 게임 결과 불러오기(Read)
 ``` c#
 // Read
@@ -108,7 +108,7 @@ public List<GameResult> GetGameResults()
 }
 ```
 
-
+(조회 사진 추가 - postman, webpage)
 ## 특정 게임 결과 불러오기(Read)
 ``` c#
 // Read
@@ -125,7 +125,7 @@ public GameResult GetGameResult(int id)
 }
 ```
 
-
+(수정 사진 추가 - postman, db)
 ## 게임 결과 수정하기(Update)
 ``` c#
 // Update
@@ -149,7 +149,7 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 }
 ```
 
-
+(삭제 사진 추가 - postman, db)
 ## 게임 결과 삭제하기(Delete)
 ``` c#
 // Delete
