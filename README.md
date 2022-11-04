@@ -75,7 +75,7 @@ public class RankingController : ControllerBase
 }
 ```
 
-(생성 사진 추가 - postman, db)
+
 ## 게임 결과 생성하기(Create)
 ``` c#
 // Create
@@ -90,8 +90,9 @@ public GameResult AddGameResult([FromBody] GameResult gameResult)
 	return gameResult;
 }
 ```
+(생성 사진 추가 - postman, db)
 
-(조회 사진 추가 - postman, webpage)
+
 ## 모든 게임 결과 불러오기(Read)
 ``` c#
 // Read
@@ -107,8 +108,9 @@ public List<GameResult> GetGameResults()
 	return results;
 }
 ```
-
 (조회 사진 추가 - postman, webpage)
+
+
 ## 특정 게임 결과 불러오기(Read)
 ``` c#
 // Read
@@ -124,8 +126,9 @@ public GameResult GetGameResult(int id)
 	return result;
 }
 ```
+(조회 사진 추가 - postman, webpage)
 
-(수정 사진 추가 - postman, db)
+
 ## 게임 결과 수정하기(Update)
 ``` c#
 // Update
@@ -148,8 +151,9 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 	return true;
 }
 ```
+(수정 사진 추가 - postman, db)
 
-(삭제 사진 추가 - postman, db)
+
 ## 게임 결과 삭제하기(Delete)
 ``` c#
 // Delete
@@ -171,3 +175,4 @@ public bool DeleteGameResult(int id)
 	return true;
 }
 ```
+(삭제 사진 추가 - postman, db)
