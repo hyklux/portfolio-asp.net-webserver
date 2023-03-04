@@ -1,0 +1,27 @@
+C:\Users\rooki\source\repos\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.deps.json
+C:\Users\rooki\source\repos\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\rooki\source\repos\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.pdb
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csprojAssemblyReference.cache
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfoInputs.cache
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfo.cs
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csproj.CoreCompileInputs.cache
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\rooki\source\repos\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.pdb
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.deps.json
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.pdb
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csprojAssemblyReference.cache
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfoInputs.cache
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfo.cs
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csproj.CoreCompileInputs.cache
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\rooki\OneDrive\바탕 화면\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.pdb
+D:\portfolio-rankingapp\SharedData\bin\Debug\netcoreapp3.1\SharedData.deps.json
+D:\portfolio-rankingapp\SharedData\bin\Debug\netcoreapp3.1\SharedData.dll
+D:\portfolio-rankingapp\SharedData\bin\Debug\netcoreapp3.1\SharedData.pdb
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.GeneratedMSBuildEditorConfig.editorconfig
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfoInputs.cache
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfo.cs
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csproj.CoreCompileInputs.cache
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.dll
+D:\portfolio-rankingapp\SharedData\obj\Debug\netcoreapp3.1\SharedData.pdb
