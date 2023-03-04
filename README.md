@@ -14,13 +14,10 @@ REST API를 활용해 게임 결과 순위에 대한 CRUD를 수행하는 웹기
 :heavy_check_mark: REST API에 대한 응답을 처리할 Controller 생성
 
 
+:heavy_check_mark: 게임 결과 불러오기(Read)
+
+
 :heavy_check_mark: 게임 결과 생성하기(Create)
-
-
-:heavy_check_mark: 모든 게임 결과 불러오기(Read)
-
-
-:heavy_check_mark:  게임 결과 불러오기(Read)
 
 
 :heavy_check_mark: 게임 결과 수정하기(Update)
@@ -76,23 +73,6 @@ public class RankingController : ControllerBase
 ```
 
 
-## 게임 결과 생성하기(Create)
-``` c#
-// Create
-// 아이템 생성 요청 (Body에 실제 정보)
-// POST /api/ranking
-[HttpPost]
-public GameResult AddGameResult([FromBody] GameResult gameResult)
-{
-	_context.GameResults.Add(gameResult);
-	_context.SaveChanges();
-
-	return gameResult;
-}
-```
-(생성 사진 추가 - postman, db)
-
-
 ## 모든 게임 결과 불러오기(Read)
 ``` c#
 // Read
@@ -111,22 +91,21 @@ public List<GameResult> GetGameResults()
 (조회 사진 추가 - postman, webpage)
 
 
-## 특정 게임 결과 불러오기(Read)
+## 게임 결과 생성하기(Create)
 ``` c#
-// Read
-// id=1번인 아이템
-// GET /api/ranking/1
-[HttpGet("{id}")]
-public GameResult GetGameResult(int id)
+// Create
+// 아이템 생성 요청 (Body에 실제 정보)
+// POST /api/ranking
+[HttpPost]
+public GameResult AddGameResult([FromBody] GameResult gameResult)
 {
-	GameResult result = _context.GameResults
-				.Where(item => item.Id == id)
-				.FirstOrDefault();
+	_context.GameResults.Add(gameResult);
+	_context.SaveChanges();
 
-	return result;
+	return gameResult;
 }
 ```
-(조회 사진 추가 - postman, webpage)
+(생성 사진 추가 - postman, db)
 
 
 ## 게임 결과 수정하기(Update)
