@@ -14,13 +14,10 @@ REST API를 활용해 게임 결과 순위에 대한 CRUD를 수행하는 웹기
 :heavy_check_mark: REST API에 대한 응답을 처리할 Controller 생성
 
 
+:heavy_check_mark: 게임 결과 불러오기(Read)
+
+
 :heavy_check_mark: 게임 결과 생성하기(Create)
-
-
-:heavy_check_mark: 모든 게임 결과 불러오기(Read)
-
-
-:heavy_check_mark:  게임 결과 불러오기(Read)
 
 
 :heavy_check_mark: 게임 결과 수정하기(Update)
@@ -76,24 +73,7 @@ public class RankingController : ControllerBase
 ```
 
 
-## 게임 결과 생성하기(Create)
-``` c#
-// Create
-// 아이템 생성 요청 (Body에 실제 정보)
-// POST /api/ranking
-[HttpPost]
-public GameResult AddGameResult([FromBody] GameResult gameResult)
-{
-	_context.GameResults.Add(gameResult);
-	_context.SaveChanges();
-
-	return gameResult;
-}
-```
-(생성 사진 추가 - postman, db)
-
-
-## 모든 게임 결과 불러오기(Read)
+## 게임 결과 불러오기(Read)
 ``` c#
 // Read
 // 모든 아이템
@@ -108,25 +88,25 @@ public List<GameResult> GetGameResults()
 	return results;
 }
 ```
-(조회 사진 추가 - postman, webpage)
+![asp net_webserver_read1](https://user-images.githubusercontent.com/96270683/222903540-ad44db2b-16ca-48a9-a605-503b0351c332.PNG)
 
 
-## 특정 게임 결과 불러오기(Read)
+## 게임 결과 생성하기(Create)
 ``` c#
-// Read
-// id=1번인 아이템
-// GET /api/ranking/1
-[HttpGet("{id}")]
-public GameResult GetGameResult(int id)
+// Create
+// 아이템 생성 요청 (Body에 실제 정보)
+// POST /api/ranking
+[HttpPost]
+public GameResult AddGameResult([FromBody] GameResult gameResult)
 {
-	GameResult result = _context.GameResults
-				.Where(item => item.Id == id)
-				.FirstOrDefault();
+	_context.GameResults.Add(gameResult);
+	_context.SaveChanges();
 
-	return result;
+	return gameResult;
 }
 ```
-(조회 사진 추가 - postman, webpage)
+![asp net_webserver_create1](https://user-images.githubusercontent.com/96270683/222903547-d8019cce-d42c-41cb-bd8d-bd98be22f7d7.PNG)
+![asp net_webserver_create2](https://user-images.githubusercontent.com/96270683/222903552-43362467-f645-4c41-b7b4-ced2ad1e8667.PNG)
 
 
 ## 게임 결과 수정하기(Update)
@@ -151,7 +131,8 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 	return true;
 }
 ```
-(수정 사진 추가 - postman, db)
+![asp net_webserver_update1](https://user-images.githubusercontent.com/96270683/222903559-153a85dc-1d03-4543-a265-d0b7e7f26e6d.PNG)
+![asp net_webserver_update2](https://user-images.githubusercontent.com/96270683/222903563-98f096b8-1011-41b2-88fd-8d823a5e0f85.PNG)
 
 
 ## 게임 결과 삭제하기(Delete)
@@ -175,4 +156,3 @@ public bool DeleteGameResult(int id)
 	return true;
 }
 ```
-(삭제 사진 추가 - postman, db)
