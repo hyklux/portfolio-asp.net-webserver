@@ -88,7 +88,7 @@ public List<GameResult> GetGameResults()
 	return results;
 }
 ```
-(조회 사진 추가 - postman, webpage)
+![asp net_webserver_read1](https://user-images.githubusercontent.com/96270683/222903540-ad44db2b-16ca-48a9-a605-503b0351c332.PNG)
 
 
 ## 게임 결과 생성하기(Create)
@@ -105,7 +105,8 @@ public GameResult AddGameResult([FromBody] GameResult gameResult)
 	return gameResult;
 }
 ```
-(생성 사진 추가 - postman, db)
+![asp net_webserver_create1](https://user-images.githubusercontent.com/96270683/222903547-d8019cce-d42c-41cb-bd8d-bd98be22f7d7.PNG)
+![asp net_webserver_create2](https://user-images.githubusercontent.com/96270683/222903552-43362467-f645-4c41-b7b4-ced2ad1e8667.PNG)
 
 
 ## 게임 결과 수정하기(Update)
@@ -130,7 +131,8 @@ public bool UpdateGameResult([FromBody] GameResult gameResult)
 	return true;
 }
 ```
-(수정 사진 추가 - postman, db)
+![asp net_webserver_update1](https://user-images.githubusercontent.com/96270683/222903559-153a85dc-1d03-4543-a265-d0b7e7f26e6d.PNG)
+![asp net_webserver_update2](https://user-images.githubusercontent.com/96270683/222903563-98f096b8-1011-41b2-88fd-8d823a5e0f85.PNG)
 
 
 ## 게임 결과 삭제하기(Delete)
@@ -154,4 +156,3 @@ public bool DeleteGameResult(int id)
 	return true;
 }
 ```
-(삭제 사진 추가 - postman, db)
