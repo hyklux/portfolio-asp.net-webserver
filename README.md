@@ -41,7 +41,7 @@ namespace SharedData.Models
 }
 ```
 
-(DB 사진 추가)
+![asp net_webserver_db1](https://user-images.githubusercontent.com/96270683/222903706-42954fd2-d9dc-440e-a15a-b0a043a77e65.PNG)
 ## ApplicationDbContext 생성 및 GameResults DbSet 선언
 ``` c#
 public class ApplicationDbContext : DbContext
