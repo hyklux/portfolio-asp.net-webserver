@@ -73,7 +73,7 @@ public class RankingController : ControllerBase
 ```
 
 
-## 모든 게임 결과 불러오기(Read)
+## 게임 결과 불러오기(Read)
 ``` c#
 // Read
 // 모든 아이템
